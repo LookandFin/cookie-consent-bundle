@@ -146,6 +146,10 @@
     box-shadow: 0 26px 10px -21px rgba(0, 0, 0, .28);
 }
 
+.ch-cookie-consent__btn_save {
+    display: none;
+}
+
 @media screen and (max-width: 641px) {
     .ch-cookie-consent__btn {
         width: 100%;
