@@ -66,7 +66,9 @@ class CookieConsentType extends AbstractType
                     ['ch_cookie_consent.yes' => 'true'],
                     ['ch_cookie_consent.no' => 'false'],
                 ],
-                'disabled' => $category === 'functional'
+                'attr' => [
+                    'data-disabled-false' => $category === 'functional'
+                ]
             ]);
         }
 
