@@ -19,7 +19,6 @@ document.addEventListener("DOMContentLoaded", function() {
             cookieConsent.style.position = 'fixed';
             cookieConsent.style.bottom = '0';
             cookieConsent.style.left = '0';
-            cookieConsent.style.height = '100%';
             cookieConsent.style.overflow = 'auto';
         }
     }
@@ -61,6 +60,7 @@ document.addEventListener("DOMContentLoaded", function() {
             cookieConsentCategoryDetailsToggle.querySelector('.ch-cookie-consent__toggle-details-hide').style.display = detailsIsHidden ? 'block' : 'none';
             cookieConsentCategoryDetailsToggle.querySelector('.ch-cookie-consent__toggle-details-show').style.display = detailsIsHidden ? 'none' : 'block';
             document.getElementById('cookie_consent_save').style.display = detailsIsHidden ? 'block' : 'none';
+            cookieConsent.style.height = detailsIsHidden ? '100%' : 'auto';
         });
     }
 });
