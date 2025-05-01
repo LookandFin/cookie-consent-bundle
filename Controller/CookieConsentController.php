@@ -91,9 +91,8 @@ class CookieConsentController
 
     /**
      * Show cookie consent.
-     *
-     * @Route("/cookie_consent", name="ch_cookie_consent.show")
      */
+    #[Route(path: '/cookie_consent', name: 'ch_cookie_consent.show')]
     public function show(Request $request): Response
     {
         $this->setLocale($request);
@@ -116,9 +115,8 @@ class CookieConsentController
 
     /**
      * Show cookie consent.
-     *
-     * @Route("/cookie_consent_alt", name="ch_cookie_consent.show_if_cookie_consent_not_set")
      */
+    #[Route(path: '/cookie_consent_alt', name: 'ch_cookie_consent.show_if_cookie_consent_not_set')]
     public function showIfCookieConsentNotSet(Request $request): Response
     {
         if ($this->cookieChecker->isCookieConsentSavedByUser() === false) {
