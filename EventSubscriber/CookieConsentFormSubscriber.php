@@ -57,7 +57,7 @@ class CookieConsentFormSubscriber implements EventSubscriberInterface
     public static function getSubscribedEvents(): array
     {
         return [
-           KernelEvents::RESPONSE => ['onResponse'],
+            KernelEvents::RESPONSE => ['onResponse'],
         ];
     }
 
